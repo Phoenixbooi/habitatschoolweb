@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1rem/1.618rem arial, sans-serif; color: #ffffff; 
+    background-image:url('images/universe4kcool.jpg');
+    
+}
+
+/* Heading */
+h1,h2,h3{
+    line-height: 1.618em;
+    margin: 1.618em 0;
+}
+h1:first-child,h2:first-child,h3:first-child{
+    margin-top: 0;
+}
+h1:last-child,h2:last-child,h3:last-child{
+    margin-bottom: 0;
+}
+
+/* Sectioning */
+section, article, aside, nav{
+    padding: 1.618rem;
+}
+
+/* main */
+main{
+    display: flex;
+}
+main article{
+    width: 70%;
+}
+main aside{
+    width: 30%;
+}
+aside ul{
+    margin: 0.818rem;
+    list-style: none;
+}
+
+/* body header */
+header nav ul{
+    margin: -3.10rem -1.618rem;
+    list-style: none;
+    display: flex;
+}
+header nav ul li{
+    width: 100%;
+    text-align: center;
+    padding: 1.618rem 0;
+}
+/* aside list */
+aside ul li{
+    padding: 1.618rem 0;
+}
+a {color: #61FF00; text-decoration: none;}
+
+/* footer */
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#174CFE ;
+  color: white;
+  text-align: center;
+}
+/* Nav */
+.nav {
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+}
+.nav > li {
+  position: relative;
+  display: block;
+}
+.nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  background-color: #4C4C4C;
+}
+.nav > li > a:hover,
+.nav > li > a:focus {
+  text-decoration: none;
+  color: #fff;
+  background-color: #CC2828;
+}
+.nav > li > a.active {
+  text-decoration: none;
+  color: #fff;
+  background-color: #5900FF;
+}
+/** Side Navigation **/
+header nav ul li.sidenav{
+    width: 15%;
+    text-align: center;
+    padding: 10px 0px;
+    margin: 24px 0px;
+    background-color: #000000;
+}
+header nav ul li.sidenav span{
+    font-size:30px;
+    cursor:pointer;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#FFA500 ;
+  color: black;
+  text-align: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 2;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
